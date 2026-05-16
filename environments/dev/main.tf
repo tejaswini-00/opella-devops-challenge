@@ -14,8 +14,8 @@ module "vnet" {
   resource_group_name = azurerm_resource_group.this.name
   location            = azurerm_resource_group.this.location
 
-  vnet_name       = "vnet-dev-eastus-opella"
-  address_space   = ["10.0.0.0/16"]
+  vnet_name     = "vnet-dev-eastus-opella"
+  address_space = ["10.0.0.0/16"]
 
   subnet_name     = "subnet-app"
   subnet_prefixes = ["10.0.1.0/24"]
